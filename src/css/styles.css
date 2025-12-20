@@ -16,3 +16,87 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 1440px;
+  justify-content: center;
+  user-select: none;
+  margin-top: 40px;
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 48px) / 3);
+  list-style: none;
+  background-color: #fff;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.feedback-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+}
+
+.feedback-form > label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 8px;
+}
+
+.feedback-form > label > input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.feedback-form > label > input:hover,
+.feedback-form > label > textarea:hover {
+  border: 1px solid #000;
+}
+
+.feedback-form > label > textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  resize: none;
+}
+
+.feedback-form > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+}
+
+.feedback-form > button:hover {
+  background: #6c8cff;
+}
